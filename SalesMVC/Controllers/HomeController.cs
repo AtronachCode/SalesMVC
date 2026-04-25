@@ -14,11 +14,18 @@ namespace SalesMVC.Controllers
         }
 
         public IActionResult Index()
-        {
+        {   
+            
+            ViewData["email"] = "jose@gmail.com";
             return View();
         }
 
         public IActionResult Privacy()
+        {
+            return View();
+        }
+
+        public IActionResult Contato()
         {
             return View();
         }
